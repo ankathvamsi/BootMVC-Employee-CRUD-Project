@@ -5,12 +5,14 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ankathvamsi.entity.EmployeeEntity;
 import com.ankathvamsi.error.EmployeeNotFoundException;
 import com.ankathvamsi.repository.IEmployeeRepository;
 import com.ankathvamsi.vo.EmployeeVO;
 
+@Service
 public class EmployeeServiceImpl implements IEmployeeService {
 	
 		final IEmployeeRepository repo;
